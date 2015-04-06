@@ -13,5 +13,14 @@ export default Ember.Controller.extend({
       this.set('name', '');
       todo.save();
     }
-  }
+  },
+
+
+  //remaining: function() {
+  //  return this.filterBy('completed', false).get('length');
+  //}.property('@each.completed')
+
+
+
+
 });
