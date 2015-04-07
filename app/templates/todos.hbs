@@ -19,7 +19,7 @@
 
       <footer id="footer">
         <span id="todo-count">
-          <strong>{{remaining}}</strong> {{inflection}} left
+          {{ pluralize remaining.length 'item' }} left
         </span>
         <ul id="filters">
           <li>

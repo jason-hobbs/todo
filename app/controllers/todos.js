@@ -15,9 +15,11 @@ export default Ember.Controller.extend({
     }
   },
 
+  remaining: Ember.computed.filterBy('model','completed', false)
 
-  //remaining: function() {
-  //  return this.filterBy('completed', false).get('length');
+
+//  remaining: function() {
+  //  return this.filterBy('model', 'completed', false).get('length');
   //}.property('@each.completed')
 
 
